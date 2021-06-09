@@ -9,7 +9,12 @@
             <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
             <link rel="manifest" href="/site.webmanifest">
         </head>
-        <body>
+
+<!--
+        <body onload="randomCursor();" id="demo">
+-->
+        <body id="demo">
+
             <h1>
                 <img src="images/man-farting.gif">
                 <img src="images/computer-01.gif">
@@ -17,6 +22,22 @@
                 <img src="images/computer-01.gif">
                 <img src="images/man-farting.gif">
             </h1>
+<!--
+            <script>
+                function randomCursor() {
+                    var cur = "crosshair"
+                    document.getElementById("demo").style.cursor = cur;
+                }
+            </script>
+-->
+            <script>
+                function play(){
+                     var audio = document.getElementById("audio");
+                     audio.play();
+                }
+            </script>
+            <audio id="audio" src="fart.m4a" ></audio>
+
             <p><marquee width="400px" behavior="SCROLL" bgcolor="#EEE0CB" loop="100">Fart Hard Official - The Hottest Shit on the Web</marquee></p>
             <!--
             <table style="width: auto;">
@@ -28,14 +49,17 @@
             </table>
             -->
             <p>
-                <img style="width: 30%;" src="images/thanksMom.png">
-                <img style="width: 30%;" src="images/chimpZone.png">
-                <img style="width: 30%;" src="images/myMom.png">
+                <img style="width: 30%;" src="images/thanksMom.png" value="PLAY" onclick="play()">
+                <img style="width: 30%;" src="images/chimpZone.png" value="PLAY" onclick="play()">
+                <img style="width: 30%;" src="images/myMom.png" value="PLAY" onclick="play()">
             </p>
             <p>
-                <img style="width: 30%;" src="images/hurtsToSwim.png">
-                <img style="width: 30%;" src="images/born2cum.png">
-                <img style="width: 30%;" src="images/ipeeinpools.png">
+                <img style="width: 30%;" src="images/hurtsToSwim.png" value="PLAY" onclick="play()">
+                <img style="width: 30%;" src="images/born2cum.png" value="PLAY" onclick="play()">
+                <img style="width: 30%;" src="images/ipeeinpools.png" value="PLAY" onclick="play()">
+            </p>
+            <p>               
+                <img style="width: 30%;" src=images/ipoo.png value="PLAY" onclick="play()">
             </p>
             <h2><img style="height: 60px" src="images/phone.gif">  (646) 476-2197  <img style="height: 60px" src="images/phone.gif"></h2>
         </body>
